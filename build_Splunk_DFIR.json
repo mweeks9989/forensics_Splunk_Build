@@ -1,0 +1,184 @@
+{
+ "variables": {
+    "aws_access_key": "",
+    "aws_secret_key": ""
+ },
+ "builders": [{
+    "type": "amazon-ebs",
+    "name": "us-east-1",
+    "access_key": "{{user `aws_access_key`}}",
+    "secret_key": "{{user `aws_secret_key`}}",
+    "region": "us-east-1",
+    "source_ami": "ami-07ebfd5b3428b6f4d",
+    "instance_type": "t2.micro",
+    "ssh_username": "ubuntu",
+    "ami_name": "DFIR_Splunk_{{timestamp}}"
+  },{
+    "type": "amazon-ebs",
+    "name": "us-east-2",
+    "access_key": "{{user `aws_access_key2`}}",
+    "secret_key": "{{user `aws_secret_key2`}}",
+    "region": "us-west-2", 
+    "source_ami": "ami-0fc20dd1da406780b",
+    "instance_type": "t2.micro", 
+    "ssh_username": "ubuntu", 
+    "ami_name": "DFIR_Splunk_{{timestamp}}"
+ },{
+    "type": "amazon-ebs",
+    "name": "us-west-1",
+    "access_key": "{{user `aws_access_key2`}}",
+    "secret_key": "{{user `aws_secret_key2`}}",
+    "region": "us-west-1", 
+    "source_ami": "ami-03ba3948f6c37a4b0",
+    "instance_type": "t2.micro", 
+    "ssh_username": "ubuntu", 
+    "ami_name": "DFIR_Splunk_{{timestamp}}"
+ },{
+    "type": "amazon-ebs",
+    "name": "us-west-2",
+    "access_key": "{{user `aws_access_key2`}}",
+    "secret_key": "{{user `aws_secret_key2`}}",
+    "region": "us-west-2", 
+    "source_ami": "ami-0d1cd67c26f5fca19",
+    "instance_type": "t2.micro", 
+    "ssh_username": "ubuntu", 
+    "ami_name": "DFIR_Splunk_{{timestamp}}"
+ },{
+    "type": "amazon-ebs",
+    "name": "ap-south-1",
+    "access_key": "{{user `aws_access_key2`}}",
+    "secret_key": "{{user `aws_secret_key2`}}",
+    "region": "ap-south-1", 
+    "source_ami": "ami-0620d12a9cf777c87",
+    "instance_type": "t2.micro", 
+    "ssh_username": "ubuntu", 
+    "ami_name": "DFIR_Splunk_{{timestamp}}"
+ },{
+    "type": "amazon-ebs",
+    "name": "ap-northeast-2",
+    "access_key": "{{user `aws_access_key2`}}",
+    "secret_key": "{{user `aws_secret_key2`}}",
+    "region": "ap-northeast-2", 
+    "source_ami": "ami-0cd7b0de75f5a35d1",
+    "instance_type": "t2.micro", 
+    "ssh_username": "ubuntu", 
+    "ami_name": "DFIR_Splunk_{{timestamp}}"
+ },{
+    "type": "amazon-ebs",
+    "name": "ap-southeast-1",
+    "access_key": "{{user `aws_access_key2`}}",
+    "secret_key": "{{user `aws_secret_key2`}}",
+    "region": "ap-southeast-1", 
+    "source_ami": "ami-09a4a9ce71ff3f20b",
+    "instance_type": "t2.micro", 
+    "ssh_username": "ubuntu", 
+    "ami_name": "DFIR_Splunk_{{timestamp}}"
+ },{
+    "type": "amazon-ebs",
+    "name": "ap-southeast-2",
+    "access_key": "{{user `aws_access_key2`}}",
+    "secret_key": "{{user `aws_secret_key2`}}",
+    "region": "ap-southeast-2", 
+    "source_ami": "ami-0d8706c5614c563d7",
+    "instance_type": "t2.micro", 
+    "ssh_username": "ubuntu", 
+    "ami_name": "DFIR_Splunk_{{timestamp}}"
+ },{
+    "type": "amazon-ebs",
+    "name": "ap-northeast-1",
+    "access_key": "{{user `aws_access_key2`}}",
+    "secret_key": "{{user `aws_secret_key2`}}",
+    "region": "ap-northeast-1", 
+    "source_ami": "ami-07f4cb4629342979c",
+    "instance_type": "t2.micro", 
+    "ssh_username": "ubuntu", 
+    "ami_name": "DFIR_Splunk_{{timestamp}}"
+ },{
+    "type": "amazon-ebs",
+    "name": "ca-central-1",
+    "access_key": "{{user `aws_access_key2`}}",
+    "secret_key": "{{user `aws_secret_key2`}}",
+    "region": "ca-central-1", 
+    "source_ami": "ami-0d0eaed20348a3389",
+    "instance_type": "t2.micro", 
+    "ssh_username": "ubuntu", 
+    "ami_name": "DFIR_Splunk_{{timestamp}}"
+ },{
+    "type": "amazon-ebs",
+    "name": "eu-central-1",
+    "access_key": "{{user `aws_access_key2`}}",
+    "secret_key": "{{user `aws_secret_key2`}}",
+    "region": "eu-central-1", 
+    "source_ami": "ami-0b418580298265d5c",
+    "instance_type": "t2.micro", 
+    "ssh_username": "ubuntu", 
+    "ami_name": "DFIR_Splunk_{{timestamp}}"
+ },{
+    "type": "amazon-ebs",
+    "name": "eu-west-1",
+    "access_key": "{{user `aws_access_key2`}}",
+    "secret_key": "{{user `aws_secret_key2`}}",
+    "region": "eu-west-1", 
+    "source_ami": "ami-035966e8adab4aaad",
+    "instance_type": "t2.micro", 
+    "ssh_username": "ubuntu", 
+    "ami_name": "DFIR_Splunk_{{timestamp}}"
+ },{
+    "type": "amazon-ebs",
+    "name": "eu-west-2",
+    "access_key": "{{user `aws_access_key2`}}",
+    "secret_key": "{{user `aws_secret_key2`}}",
+    "region": "eu-west-2", 
+    "source_ami": "ami-006a0174c6c25ac06",
+    "instance_type": "t2.micro", 
+    "ssh_username": "ubuntu", 
+    "ami_name": "DFIR_Splunk_{{timestamp}}"
+ },{
+    "type": "amazon-ebs",
+    "name": "eu-west-3",
+    "access_key": "{{user `aws_access_key2`}}",
+    "secret_key": "{{user `aws_secret_key2`}}",
+    "region": "eu-west-3", 
+    "source_ami": "ami-096b8af6e7e8fb927",
+    "instance_type": "t2.micro", 
+    "ssh_username": "ubuntu", 
+    "ami_name": "DFIR_Splunk_{{timestamp}}"
+ },{
+    "type": "amazon-ebs",
+    "name": "eu-north-1",
+    "access_key": "{{user `aws_access_key2`}}",
+    "secret_key": "{{user `aws_secret_key2`}}",
+    "region": "eu-north-1", 
+    "source_ami": "ami-0b7937aeb16a7eb94",
+    "instance_type": "t2.micro", 
+    "ssh_username": "ubuntu", 
+    "ami_name": "DFIR_Splunk_{{timestamp}}"
+ },{
+    "type": "amazon-ebs",
+    "name": "sa-east-1",
+    "access_key": "{{user `aws_access_key2`}}",
+    "secret_key": "{{user `aws_secret_key2`}}",
+    "region": "sa-east-1", 
+    "source_ami": "ami-05494b93950efa2fd",
+    "instance_type": "t2.micro", 
+    "ssh_username": "ubuntu", 
+    "ami_name": "DFIR_Splunk_{{timestamp}}"
+ }],
+ "provisioners": [{
+    "type": "shell",
+    "inline": [
+	  "sudo add-apt-repository -y ppa:gift/stable",
+	  "sudo apt-get update -y",
+	  "sudo apt-get install -y plaso-tools",
+	  "sudo apt-get install -y sleuthkit",
+	  "sudo apt-get install -y binutils",
+	  "sudo mkdir /mnt/linux",
+	  "sudo mkdir /cases",
+	  "sudo mkdir -p /opt/splunk",
+	  "wget https://download.splunk.com/products/splunk/releases/7.1.1/linux/splunk-7.1.1-8f0ead9ec3db-linux-2.6-amd64.deb",
+	  "sudo dpkg -i splunk-7.1.1-8f0ead9ec3db-linux-2.6-amd64.deb",
+	  "sudo /opt/splunk/bin/splunk --answer-yes --no-prompt --accept-license enable boot-start"
+	  
+    ]
+  }]
+}
